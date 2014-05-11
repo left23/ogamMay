@@ -6,4 +6,4 @@ One Game a Month for May - theme: family
 
 Whack-a-monarch
 
- ![My image](left23.github.com/ogamMay/img/scene-all.jpg)
+ ![My image](https://raw.github.com/left23/ogamMay/master/scene-all.jpg)
