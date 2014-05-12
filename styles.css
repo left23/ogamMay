@@ -90,6 +90,7 @@ body {
 	background-position:50% 50%;
 	background-repeat:no-repeat;
 	position:relative;
+	cursor:url(mallet.png), auto;
 }
 .index .picture {
 	background-image:url(scene.jpg);
@@ -105,6 +106,11 @@ div.mole {
 	background-position:50% 50%;
 	background-repeat:no-repeat;
 	position:absolute;
+}
+
+
+div.mole.explode {
+	background-image:url(explode.png);
 }
 
 div#moleOne {
