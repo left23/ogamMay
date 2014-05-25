@@ -110,7 +110,7 @@ div.mole {
 
 
 div.mole.explode {
-	background-image:url(explode.png);
+	background-image:url(explode.png) !important;
 }
 
 div#moleOne {
@@ -134,6 +134,12 @@ div#moleFour {
 	left:399px;
 }
 
-
+.score {
+width:100px;
+position:relative;
+left:20;
+top:20;
+color:white;
+}
 
 
