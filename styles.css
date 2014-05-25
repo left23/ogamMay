@@ -97,9 +97,15 @@ body {
 }
 
 
-div.mole {
+div.active {
+	display:block;
+}
+div.inactive {
 	display:none;
-	/*display:block;*/
+}
+div.mole {
+	/*display:none;
+	display:block;*/
 	height:214px;
 	width:186px;
 	background-size:cover;

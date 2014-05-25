@@ -1,24 +1,12 @@
+
 $(document).on('ready',function(){
-    setInterval(whaka,500);
-  });
 	
 	
-			var score=0;
+	$(".mole").addClass("inactive");
 
 
-
-	function whaka(){
-		var mole = $(".mole").toArray();
-		var elemlength = mole.length;
-		var randomnum = Math.floor(Math.random()*elemlength);
-		var randomitem = mole[randomnum];
-		//$(randomitem).css("display", "block").addClass("active");
-		$(randomitem).removeClass("explode").toggle().toggleClass("active");
-	}
+	var score=0;
 	
-	
-$(document).ready(function(){
-
 	//$("#container").css( 'cursor', 'url(mallet.png), auto' );
 
 	$(".mole").click(function() {
@@ -27,12 +15,39 @@ $(document).ready(function(){
 	
 	$(".score span").html(score);
 	
-		if ($(this).hasClass("active")) {
+		//if ($(this).hasClass("active")) {
 			$(this).addClass("explode").delay( 800 ).hide(0);
-		}
+		//}
+		
 	});
+
 	
+    setInterval(whaka,500);
+    
+    
 });
 
 
+	function whaka(){
+		var mole = $(".mole").toArray();
+		var elemlength = mole.length;
+		var randomnum = Math.floor(Math.random()*elemlength);
+		var randomitem = mole[randomnum];
+		//$(randomitem).css("display", "block").addClass("active");
+		$(randomitem).removeClass("explode");
+		
+		$(randomitem).removeClass("inactive");
+		$(randomitem).addClass("active");
+		
+		//delay goes here
+		setTimeout(function() {
+		$(randomitem).addClass("inactive");	
+		$(randomitem).removeClass("active");
+		},1000);
+		
+	}
+	
+	
+
+	
 
