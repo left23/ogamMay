@@ -121,31 +121,36 @@ div.mole.explode {
 
 div#moleOne {
 	background-image:url(camilla.png);
-	top:167px;
-	left:18px;
+	top:89px;
+	left:-6px;
 }
 div#moleTwo {
 	background-image:url(prince.png);
-	top:223px;
-	left:138px;
+	top:239px;
+	left:1px;
 }
 div#moleThree {
 	background-image:url(queen.png);
-	top:157px;
-	left:272px;
+	top:159px;
+	left:206px;
 }
 div#moleFour {
 	background-image:url(king.png);
-	top:104px;
-	left:399px;
+	top:86px;
+	left:405px;
+}
+div#moleFive {
+	background-image:url(william.png);
+	top:252px;
+	left:414px;
 }
 
 .score {
-width:100px;
-position:relative;
-left:20;
-top:20;
-color:white;
+	width:100px;
+	position:relative;
+	left:20;
+	top:20;
+	color:white;
 }
 
 
